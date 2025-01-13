@@ -1,4 +1,5 @@
 // src/components/Footer.tsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -21,9 +22,9 @@ const Footer: React.FC = () => {
     <footer className="bg-[#373f51] py-8 text-white">
       <div className="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
         {/* Socials Section */}
-        <div className="flex flex-col">
-          <h2 className="mb-4 ml-12 text-xl font-semibold underline">MLKJ</h2>
-          <div className="ml-12 flex space-x-6">
+        <div className="ml-12 flex flex-col">
+          <h2 className="mb-4 text-xl font-semibold underline">MLKJ</h2>
+          <div className="flex space-x-6">
             <a
               href="https://github.com/Aziiimm/mlkj"
               target="_blank"
@@ -56,9 +57,9 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Navigation Section */}
-        <div>
+        <div className="ml-12 md:ml-0">
           <h2 className="mb-4 text-xl font-semibold underline">Navigation</h2>
-          <ul className="space-y-2">
+          <ul className="grid grid-cols-2 space-y-2 md:grid-cols-none">
             <li>
               <Link to="/login" className="hover:text-gray-400 hover:underline">
                 Login
@@ -97,9 +98,9 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Contact Section */}
-        <div>
+        <div className="ml-12 md:ml-0">
           <h2 className="mb-4 text-xl font-semibold underline">Contact Us</h2>
-          <p className="text-md">Have questions? Reach out via email at:</p>
+          <p className="text-md">Have questions? Reach out via email:</p>
           <p
             className="text-md mt-2 cursor-pointer hover:text-gray-400 hover:underline"
             onClick={handleEmailClick}
@@ -109,7 +110,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="ml-12 mt-16 text-sm underline">
+      <div className="mr-24 mt-16 flex justify-end text-sm underline">
         <p>&copy; 2025 MLKJ</p>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 // src/pages/Landing.tsx
+
 import React from "react";
 import banner from "@/assets/images/banner.webp";
 import test from "@/assets/images/wordhunt_test.jpg";
@@ -25,17 +26,17 @@ const games = [
 const Landing: React.FC = () => {
   return (
     <div>
-      <img src={banner} className="h-96 w-full shadow-xl"></img>
+      <img src={banner} className="h-96 w-full"></img>
 
       {/* center content */}
-      <div className="flex space-x-8 bg-[#d9d9d9] px-8 py-12">
+      <div className="flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-12 md:flex-row">
         {/* games */}
-        <div className="h-1/2 w-2/3 rounded-sm bg-white shadow-2xl">
+        <div className="h-1/2 w-11/12 rounded-sm bg-white shadow-2xl md:w-2/3">
           <label className="ml-12 mt-4 inline-block align-middle text-xl font-black">
             START A NEW GAME
           </label>
           {/* Map through games */}
-          <div className="mt-2 grid grid-cols-1 gap-6 px-12 md:grid-cols-1 lg:grid-cols-3">
+          <div className="mt-2 grid gap-6 px-12 sm:grid-cols-2 lg:grid-cols-3">
             {games.map((game) => (
               <div
                 key={game.id}
@@ -44,7 +45,7 @@ const Landing: React.FC = () => {
                 <img
                   src={game.image}
                   alt={game.title}
-                  className="h-40 w-full rounded-md object-cover"
+                  className="h-40 w-full rounded-md object-contain"
                 />
                 <h3 className="mt-4 text-center text-lg font-semibold">
                   {game.title}
@@ -56,13 +57,13 @@ const Landing: React.FC = () => {
             <label className="font-semibold">Play Solo</label>
             <Switch />
           </div>
-          <div className="w-full px-12 pb-8 font-light text-gray-600">
-            In solo games, you will be matched against an AI player
+          <div className="mt-1 w-full px-12 pb-8 text-xs font-light text-gray-600 sm:text-base">
+            You will be matched against an AI player. No account necessary!
           </div>
         </div>
 
         {/* right side */}
-        <div className="flex w-1/3 flex-col gap-6">
+        <div className="flex w-11/12 flex-col justify-between gap-6 md:w-1/3">
           {/* join room */}
           <div className="flex flex-col rounded-sm bg-white pb-6 shadow-xl">
             <label className="ml-6 mt-4 inline-block align-middle text-xl font-black">
@@ -71,18 +72,27 @@ const Landing: React.FC = () => {
             <label className="ml-6 mt-2 inline-block align-middle text-sm font-black font-normal">
               Room Code:
             </label>
-            <div className="w-full space-x-2">
+            <div className="ml-6 flex flex-col justify-between space-y-2 lg:flex-row lg:space-y-0">
               <input
                 type="number"
                 inputMode="numeric"
                 min="1"
                 max="9999"
-                className="no-spinners ml-6 mt-1 w-4/6 appearance-none rounded-sm border px-2 py-1 shadow-sm outline-1 outline-[#373f51] placeholder:italic"
+                maxLength={4}
+                className="no-spinners mr-6 mt-1 appearance-none rounded-sm border px-2 py-1 shadow-sm outline-1 outline-[#373f51] lg:mr-0 lg:w-2/3"
                 placeholder="Enter Room Code"
+                // limit code input to 4
+                onInput={(e) => {
+                  const target = e.target as HTMLInputElement;
+                  if (target.value.length > 4) {
+                    target.value = target.value.slice(0, 4);
+                  }
+                }}
               />
+
               <button
                 type="submit"
-                className="rounded-md bg-[#373f51] px-4 py-1 text-white transition duration-150 ease-in-out hover:bg-[#1c2029]"
+                className="mr-6 rounded-md bg-[#373f51] px-4 py-1 text-white transition duration-150 ease-in-out hover:bg-[#1c2029]"
               >
                 Join
               </button>
