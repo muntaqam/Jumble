@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const MainLayout: React.FC = () => {
   return (
     <main className="flex justify-center bg-[#1b1b1e]">
-      <div className="w-[1200px]">
+      <div className="w-[1400px]">
         <Navbar />
         <Outlet />
         <Footer />

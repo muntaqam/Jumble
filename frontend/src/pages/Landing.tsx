@@ -1,7 +1,6 @@
 // src/pages/Landing.tsx
 
 import React from "react";
-import test from "@/assets/images/wordhunt_test.jpg";
 import { Switch } from "@/components/ui/switch";
 import { Link } from "react-router-dom";
 
@@ -9,17 +8,20 @@ const games = [
   {
     id: 1,
     title: "Word Hunter",
-    image: test,
+    image:
+      "https://play-lh.googleusercontent.com/buGx7Qx6e_M9DUqiwABScUWx-xgiUSJBURBhivVel8OdVVzqOB2F5V3Nt60Ov8Qudw",
   },
   {
     id: 2,
     title: "Game Two",
-    image: test,
+    image:
+      "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA3L3Jhd3BpeGVsX29mZmljZV8yOV92ZWN0b3JfZmxhdF9pbGx1c3RyYXRpb25fb2ZfYV9ibGFja19ib21iX3dpdF9kNDY5Yjg3MC0wY2U1LTQ0YjktYTllMi0zNDFiZTAxY2YzNGZfMS5wbmc.png",
   },
   {
     id: 3,
     title: "Game Three",
-    image: test,
+    image:
+      "https://www.shutterstock.com/image-vector/cute-small-green-chameleon-lizard-600nw-1614232648.jpg",
   },
 ];
 
@@ -27,12 +29,12 @@ const Landing: React.FC = () => {
   return (
     <div>
       <img
-        src="https://t4.ftcdn.net/jpg/09/19/56/37/360_F_919563724_oDHjFuzyFhWJwe9X6KvAFwK4JluuhZrR.jpg"
-        className="h-96 w-full bg-[#d9d9d9] object-cover sm:object-fill"
+        src="https://as1.ftcdn.net/v2/jpg/05/19/70/66/1000_F_519706672_l1CrhrLJaiBB4lr6PlGMpxdLJmMHCpkW.jpg"
+        className="h-96 w-full bg-[#d9d9d9] object-cover sm:object-cover"
       />
 
       {/* center content */}
-      <div className="flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-12 md:flex-row">
+      <div className="font-adlam flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-12 md:flex-row">
         {/* games */}
         <div className="h-1/2 w-11/12 rounded-sm bg-white shadow-2xl md:w-2/3">
           <label className="ml-12 mt-4 inline-block align-middle text-xl font-black">
@@ -50,17 +52,15 @@ const Landing: React.FC = () => {
                   alt={game.title}
                   className="h-40 w-full rounded-md object-contain"
                 />
-                <h3 className="mt-4 text-center text-lg font-semibold">
-                  {game.title}
-                </h3>
+                <h3 className="mt-4 text-center text-lg">{game.title}</h3>
               </div>
             ))}
           </div>
           <div className="mt-6 flex w-full justify-between px-12">
-            <label className="font-semibold">Play Solo</label>
+            <label className="">Play Solo</label>
             <Switch />
           </div>
-          <div className="mt-1 w-full px-12 pb-8 text-xs font-light text-gray-600 sm:text-base">
+          <div className="mt-1 w-full px-12 pb-8 text-xs font-light text-gray-600 hover:cursor-default sm:text-base">
             You will be matched against an AI player. No account necessary!
           </div>
         </div>
@@ -95,7 +95,7 @@ const Landing: React.FC = () => {
 
               <button
                 type="submit"
-                className="mr-6 rounded-md bg-[#5C72E6] py-1 text-white transition duration-150 ease-in-out hover:bg-[#4050a1] lg:px-5 xl:px-6"
+                className="mr-6 rounded-md bg-[#5C72E6] py-1 text-white transition duration-150 ease-in-out hover:bg-[#4050a1] lg:px-6 xl:px-7"
               >
                 Join
               </button>

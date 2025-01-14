@@ -1,28 +1,25 @@
 // src/pages/About.tsx
 
 import React from "react";
-import testdog from "../assets/images/happydo.jpg";
 import Rahat from "../assets/images/rahat.jpg";
 import Ivan from "../assets/images/ivan.jpg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const About: React.FC = () => {
   return (
-    <div className="bg-slate-100 text-gray-700">
+    <div className="font-adlam bg-slate-100 text-gray-700">
       {/* about us section */}
       <section className="flex flex-col bg-slate-300 p-20 shadow-md md:flex-row">
         <div className="flex flex-col justify-center">
-          <h1 className="text-center text-4xl font-bold md:text-start">
-            About Us
-          </h1>
+          <h1 className="text-center text-4xl md:text-start">About Us</h1>
           <p className="mb-4 mt-4 text-center text-lg text-gray-600 md:mb-0 md:text-start">
-            Welcome to <strong>MLKJ!</strong> We're a small group of friends
+            Welcome to <strong>Jumble!</strong> We're a small group of friends
             dedicated to building a fun and engaging party game platform.
           </p>
         </div>
         <div className="flex w-fit justify-end">
           <img
-            src={testdog}
+            src="https://www.thesprucepets.com/thmb/s-wcx5m6Sg6y8r3EFrYfikLqJIg=/1733x0/filters:no_upscale():strip_icc()/Stocksy_txpba7ef914jvq100_Medium_1493631-5a8ef3d404d1cf003616d6f3.jpg"
             alt="About Us"
             className="object-cover shadow-xl sm:mt-6 md:mt-0 md:w-11/12 lg:w-2/3"
           />
@@ -34,16 +31,14 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row">
           <div className="flex w-fit justify-center md:justify-start">
             <img
-              src={testdog}
+              src="https://www.thesprucepets.com/thmb/s-wcx5m6Sg6y8r3EFrYfikLqJIg=/1733x0/filters:no_upscale():strip_icc()/Stocksy_txpba7ef914jvq100_Medium_1493631-5a8ef3d404d1cf003616d6f3.jpg"
               alt="Our Mission"
               className="md:5/6 w-11/12 object-cover shadow-xl"
             />
           </div>
           <div className="mt-8 flex w-11/12 flex-col justify-center md:mt-0">
-            <h2 className="text-center text-3xl font-bold md:text-start">
-              Our Mission:
-            </h2>
-            <h2 className="text-center text-3xl font-bold md:text-start">
+            <h2 className="text-center text-3xl md:text-start">Our Mission:</h2>
+            <h2 className="text-center text-3xl md:text-start">
               Creating a Fun Platform for Friends Worldwide
             </h2>
             <p className="mt-4 text-center text-gray-600 md:text-start">
@@ -61,9 +56,7 @@ const About: React.FC = () => {
         <div className="flex flex-col justify-center md:justify-start lg:flex-row">
           <div className="flex w-full flex-col justify-center lg:w-11/12">
             <div className="w-full lg:w-11/12">
-              <h2 className="text-center text-3xl font-bold lg:text-start">
-                Our Story
-              </h2>
+              <h2 className="text-center text-3xl lg:text-start">Our Story</h2>
               <p className="mt-4 text-center text-gray-600 lg:text-start">
                 Throughout the years, our friend group has countless hours
                 playing and laughing together over our favorite party games. Two
@@ -77,7 +70,7 @@ const About: React.FC = () => {
             </div>
 
             <div className="w-full lg:w-11/12">
-              <h2 className="mt-8 text-center text-xl font-bold sm:mt-4 lg:text-start">
+              <h2 className="mt-8 text-center text-xl sm:mt-4 lg:text-start">
                 Connect with us on LinkedIn
               </h2>
               <div className="mt-4 flex flex-col items-center justify-around gap-10 sm:flex-row md:gap-20 lg:justify-between lg:gap-0">
@@ -135,7 +128,7 @@ const About: React.FC = () => {
         </div>
         <div className="mt-8 flex w-full justify-center lg:mt-0 lg:justify-end">
           <img
-            src={testdog}
+            src="https://www.thesprucepets.com/thmb/s-wcx5m6Sg6y8r3EFrYfikLqJIg=/1733x0/filters:no_upscale():strip_icc()/Stocksy_txpba7ef914jvq100_Medium_1493631-5a8ef3d404d1cf003616d6f3.jpg"
             alt="Our Mission"
             className="object-cover shadow-xl"
           />
