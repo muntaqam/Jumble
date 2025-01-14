@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
       <div className="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
         {/* Socials Section */}
         <div className="ml-12 flex flex-col">
-          <h2 className="mb-4 text-xl font-semibold underline">MLKJ</h2>
+          <h2 className="mb-4 text-xl font-semibold underline">Jumble</h2>
           <div className="flex space-x-6">
             <a
               href="https://github.com/Aziiimm/mlkj"
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="mr-24 mt-16 flex justify-end text-sm underline">
-        <p>&copy; 2025 MLKJ</p>
+        <p>&copy; 2025 Jumble</p>
       </div>
     </footer>
   );

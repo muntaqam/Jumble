@@ -15,16 +15,16 @@ const Register: React.FC = () => {
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
           alt="logo"
         />
-        <div className="w-full rounded-lg bg-white shadow dark:border dark:border-gray-700 dark:bg-gray-800 sm:max-w-md md:mt-0 xl:p-0">
+        <div className="w-full rounded-lg bg-white shadow sm:max-w-md md:mt-0 xl:p-0">
           <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
-            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white md:text-2xl">
+            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
               Create an account
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
               <div>
                 <label
                   htmlFor="email"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-gray-900"
                 >
                   Your email
                 </label>
@@ -33,7 +33,7 @@ const Register: React.FC = () => {
                   name="email"
                   id="email"
                   maxLength={50}
-                  className="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900"
                   placeholder="name@company.com"
                   required
                 />
@@ -41,7 +41,7 @@ const Register: React.FC = () => {
               <div>
                 <label
                   htmlFor="password"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-gray-900"
                 >
                   Password
                 </label>
@@ -51,14 +51,14 @@ const Register: React.FC = () => {
                   id="password"
                   maxLength={50}
                   placeholder="••••••••"
-                  className="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900"
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="confirm-password"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-gray-900"
                 >
                   Confirm password
                 </label>
@@ -68,7 +68,7 @@ const Register: React.FC = () => {
                   id="confirm-password"
                   maxLength={50}
                   placeholder="••••••••"
-                  className="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-[#5C72E6]"
                   required
                 />
               </div>
@@ -93,7 +93,7 @@ const Register: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="focus:ring-primary-300 w-full rounded-lg bg-[#5C72E6] px-5 py-2.5 text-center text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-[#4050a1] focus:outline-none focus:ring-4"
+                className="w-full rounded-lg bg-[#5C72E6] px-5 py-2.5 text-center text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-[#4050a1] focus:outline-none focus:ring-4"
               >
                 Create an account
               </button>

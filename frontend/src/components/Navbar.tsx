@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center justify-between px-8 py-2">
         {/* left side (logo) */}
         <Link to="/" className="text-2xl font-bold">
-          MLKJ
+          Jumble
         </Link>
 
         {/* right side (for redirection) */}
