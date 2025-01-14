@@ -1,9 +1,9 @@
 // src/pages/Landing.tsx
 
 import React from "react";
-import banner from "@/assets/images/banner.webp";
 import test from "@/assets/images/wordhunt_test.jpg";
 import { Switch } from "@/components/ui/switch";
+import { Link } from "react-router-dom";
 
 const games = [
   {
@@ -26,7 +26,10 @@ const games = [
 const Landing: React.FC = () => {
   return (
     <div>
-      <img src={banner} className="h-96 w-full"></img>
+      <img
+        src="https://t4.ftcdn.net/jpg/09/19/56/37/360_F_919563724_oDHjFuzyFhWJwe9X6KvAFwK4JluuhZrR.jpg"
+        className="h-96 w-full bg-[#d9d9d9] object-cover sm:object-fill"
+      />
 
       {/* center content */}
       <div className="flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-12 md:flex-row">
@@ -79,7 +82,7 @@ const Landing: React.FC = () => {
                 min="1"
                 max="9999"
                 maxLength={4}
-                className="no-spinners mr-6 mt-1 appearance-none rounded-sm border px-2 py-1 shadow-sm outline-1 outline-[#373f51] lg:mr-0 lg:w-2/3"
+                className="no-spinners mr-6 mt-1 appearance-none rounded-sm border px-2 py-1 shadow-sm outline-1 outline-[#4050a1] lg:mr-0 lg:w-2/3"
                 placeholder="Enter Room Code"
                 // limit code input to 4
                 onInput={(e) => {
@@ -92,7 +95,7 @@ const Landing: React.FC = () => {
 
               <button
                 type="submit"
-                className="mr-6 rounded-md bg-[#373f51] px-4 py-1 text-white transition duration-150 ease-in-out hover:bg-[#1c2029]"
+                className="mr-6 rounded-md bg-[#5C72E6] py-1 text-white transition duration-150 ease-in-out hover:bg-[#4050a1] lg:px-5 xl:px-6"
               >
                 Join
               </button>
@@ -105,9 +108,12 @@ const Landing: React.FC = () => {
               Leaderboards
             </label>
             <div className="flex items-center justify-center">
-              <button className="mx-6 mt-2 w-full self-center rounded-md bg-[#373f51] px-2 py-2 text-white transition duration-150 ease-in-out hover:bg-[#1c2029]">
+              <Link
+                to="/leaderboard"
+                className="mx-6 mt-2 w-full self-center rounded-md bg-[#5C72E6] px-2 py-2 text-center text-white transition duration-150 ease-in-out hover:bg-[#4050a1]"
+              >
                 View
-              </button>
+              </Link>
             </div>
           </div>
         </div>

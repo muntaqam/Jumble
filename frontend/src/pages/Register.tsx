@@ -7,7 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 const Register: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-20 dark:bg-gray-900">
+    <section className="bg-gray-50 py-60 dark:bg-gray-900">
       <div className="mx-auto flex flex-col items-center px-6 py-8 lg:py-0">
         {/* repalce with our logo later */}
         <img
@@ -83,7 +83,7 @@ const Register: React.FC = () => {
                   >
                     I accept the{" "}
                     <a
-                      className="text-primary-600 dark:text-primary-500 font-medium hover:underline"
+                      className="font-medium text-[#5C72E6] hover:underline"
                       href="#"
                     >
                       Terms and Conditions
@@ -93,7 +93,7 @@ const Register: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 w-full rounded-lg bg-[#373f51] px-5 py-2.5 text-center text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-[#1c2029] focus:outline-none focus:ring-4"
+                className="focus:ring-primary-300 w-full rounded-lg bg-[#5C72E6] px-5 py-2.5 text-center text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-[#4050a1] focus:outline-none focus:ring-4"
               >
                 Create an account
               </button>
@@ -101,7 +101,7 @@ const Register: React.FC = () => {
                 Already have an account?{" "}
                 <Link
                   to="/login"
-                  className="dark:text-primary-500 font-medium text-blue-600 hover:underline"
+                  className="font-medium text-[#5C72E6] hover:underline"
                 >
                   Login
                 </Link>

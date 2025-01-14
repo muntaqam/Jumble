@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#373f51] py-8 text-white">
+    <footer className="bg-[#5C72E6] py-12 text-white">
       <div className="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
         {/* Socials Section */}
         <div className="ml-12 flex flex-col">
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <FaGithub className="text-3xl transition duration-150 ease-in-out hover:text-gray-400" />
+              <FaGithub className="text-3xl transition duration-150 ease-in-out hover:-translate-y-1" />
             </a>
             <a
               href="https://discord.gg/hVrM87YGte"
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               aria-label="Discord"
             >
-              <FaDiscord className="text-3xl transition duration-150 ease-in-out hover:text-gray-400" />
+              <FaDiscord className="text-3xl transition duration-150 ease-in-out hover:-translate-y-1" />
             </a>
             <a
               href="https://www.linkedin.com/in/azim-rahat/"
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   "https://www.linkedin.com/in/ivan-chen11/";
               }}
             >
-              <FaLinkedin className="text-3xl transition duration-150 ease-in-out hover:text-gray-400" />
+              <FaLinkedin className="text-3xl transition duration-150 ease-in-out hover:-translate-y-1" />
             </a>
           </div>
         </div>
@@ -59,39 +59,25 @@ const Footer: React.FC = () => {
         {/* Navigation Section */}
         <div className="ml-12 md:ml-0">
           <h2 className="mb-4 text-xl font-semibold underline">Navigation</h2>
-          <ul className="grid grid-cols-2 space-y-2 md:grid-cols-none">
+          <ul className="grid grid-cols-2 space-y-3 md:grid-cols-none">
             <li>
-              <Link to="/login" className="hover:text-gray-400 hover:underline">
+              <Link to="/login" className="hover:underline">
                 Login
               </Link>
             </li>
             <li>
-              <Link
-                to="/register"
-                className="hover:text-gray-400 hover:underline"
-              >
+              <Link to="/register" className="hover:underline">
                 Register
               </Link>
             </li>
             <li>
-              <Link
-                to="/leaderboard"
-                className="hover:text-gray-400 hover:underline"
-              >
+              <Link to="/leaderboard" className="hover:underline">
                 Leaderboard
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-gray-400 hover:underline">
+              <Link to="/about" className="hover:underline">
                 About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/donate"
-                className="hover:text-gray-400 hover:underline"
-              >
-                Donate
               </Link>
             </li>
           </ul>
@@ -102,7 +88,7 @@ const Footer: React.FC = () => {
           <h2 className="mb-4 text-xl font-semibold underline">Contact Us</h2>
           <p className="text-md">Have questions? Reach out via email:</p>
           <p
-            className="text-md mt-2 cursor-pointer hover:text-gray-400 hover:underline"
+            className="text-md mt-3 cursor-pointer hover:underline"
             onClick={handleEmailClick}
           >
             azimrahat108@gmail.com

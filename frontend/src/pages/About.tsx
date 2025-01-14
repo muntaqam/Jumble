@@ -72,15 +72,7 @@ const About: React.FC = () => {
               </p>
               <p className="mt-4 text-center text-gray-600 lg:text-start">
                 Being a small group of developers in college, we'd appreciate
-                any&nbsp;
-                <a
-                  href="/donate"
-                  className="inline-flex items-center font-bold hover:text-blue-500 hover:underline"
-                >
-                  donations
-                  <MdOutlineArrowOutward />
-                </a>
-                &nbsp;or suggestions.
+                any feedback!
               </p>
             </div>
 
