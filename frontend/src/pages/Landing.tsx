@@ -34,7 +34,7 @@ const Landing: React.FC = () => {
       />
 
       {/* center content */}
-      <div className="font-adlam flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-12 md:flex-row">
+      <div className="font-adlam flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-16 md:flex-row">
         {/* games */}
         <div className="h-1/2 w-11/12 rounded-sm bg-white shadow-2xl md:w-2/3">
           <label className="ml-12 mt-4 inline-block align-middle text-xl font-black">
@@ -56,12 +56,16 @@ const Landing: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="mt-6 flex w-full justify-between px-12">
-            <label className="">Play Solo</label>
-            <Switch />
-          </div>
-          <div className="mt-1 w-full px-12 pb-8 text-xs font-light text-gray-600 hover:cursor-default sm:text-base">
-            You will be matched against an AI player. No account necessary!
+          <div className="pb-10">
+            <div className="">
+              <div className="mt-6 flex w-full justify-between px-12">
+                <label className="">Play Solo</label>
+                <Switch />
+              </div>
+              <div className="mt-1 w-full px-12 text-xs font-light text-gray-600 hover:cursor-default sm:text-base">
+                You will be matched against an AI player. No account necessary!
+              </div>
+            </div>
           </div>
         </div>
 

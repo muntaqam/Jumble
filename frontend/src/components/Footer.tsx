@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="font-adlam bg-[#5C72E6] py-12 text-white">
+    <footer className="font-adlam bg-[#5C72E6] py-16 text-white">
       <div className="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
         {/* Socials Section */}
         <div className="ml-12 flex flex-col">
