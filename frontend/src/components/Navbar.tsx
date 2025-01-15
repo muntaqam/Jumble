@@ -2,11 +2,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/images/logo.png";
+import logo from "/logo.png";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="font-adlam bg-[#5C72E6] text-white">
+    <nav className="bg-[#5C72E6] font-adlam text-white">
       <div className="flex items-center justify-between px-8 py-2">
         {/* left side (logo) */}
         <Link to="/" className="w-1/4 sm:w-1/6 md:w-1/12">

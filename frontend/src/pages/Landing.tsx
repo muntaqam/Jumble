@@ -4,6 +4,8 @@ import React from "react";
 import { Switch } from "@/components/ui/switch";
 import { Link } from "react-router-dom";
 
+import banner from "../assets/images/banner.png";
+
 const games = [
   {
     id: 1,
@@ -13,13 +15,13 @@ const games = [
   },
   {
     id: 2,
-    title: "Game Two",
+    title: "Timebomb",
     image:
       "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA3L3Jhd3BpeGVsX29mZmljZV8yOV92ZWN0b3JfZmxhdF9pbGx1c3RyYXRpb25fb2ZfYV9ibGFja19ib21iX3dpdF9kNDY5Yjg3MC0wY2U1LTQ0YjktYTllMi0zNDFiZTAxY2YzNGZfMS5wbmc.png",
   },
   {
     id: 3,
-    title: "Game Three",
+    title: "Chameleon",
     image:
       "https://www.shutterstock.com/image-vector/cute-small-green-chameleon-lizard-600nw-1614232648.jpg",
   },
@@ -29,12 +31,12 @@ const Landing: React.FC = () => {
   return (
     <div>
       <img
-        src="https://as1.ftcdn.net/v2/jpg/05/19/70/66/1000_F_519706672_l1CrhrLJaiBB4lr6PlGMpxdLJmMHCpkW.jpg"
-        className="h-96 w-full bg-[#d9d9d9] object-cover sm:object-cover"
+        src={banner}
+        className="w-full object-cover object-center shadow-2xl md:h-80 lg:h-96"
       />
 
       {/* center content */}
-      <div className="font-adlam flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-16 md:flex-row">
+      <div className="flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-16 font-adlam md:flex-row">
         {/* games */}
         <div className="h-1/2 w-11/12 rounded-sm bg-white shadow-2xl md:w-2/3">
           <label className="ml-12 mt-4 inline-block align-middle text-xl font-black">

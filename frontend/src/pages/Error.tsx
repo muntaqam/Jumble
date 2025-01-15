@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const Error: React.FC = () => {
   return (
-    <div className="font-adlam flex flex-col items-center justify-center bg-slate-100 py-96">
-      <h1 className="text-6xl font-bold">404</h1>
-      <p className="mt-4 text-2xl font-semibold">Oops! Page Not Found</p>
+    <div className="flex flex-col items-center justify-center bg-slate-100 py-96 font-adlam">
+      <h1 className="text-6xl">404</h1>
+      <p className="mt-4 text-2xl">Oops! Page Not Found</p>
       <p className="mt-2 text-lg">The page you're looking for doesn't exist.</p>
       <Link
         to="/"

@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
-import logo from "../assets/images/logo.png";
+import logo from "/logo.png";
 
 import { toast } from "@/hooks/use-toast";
 
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="font-adlam bg-[#5C72E6] py-16 text-white">
+    <footer className="bg-[#5C72E6] py-16 font-adlam text-white">
       <div className="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
         {/* Socials Section */}
         <div className="ml-12 flex flex-col">
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
         {/* Navigation Section */}
         <div className="ml-12 md:ml-0">
           <h2 className="mb-4 text-xl underline">Navigation</h2>
-          <ul className="grid grid-cols-2 space-y-3 md:grid-cols-none">
+          <ul className="grid grid-cols-2 gap-3 md:grid-cols-none">
             <li>
               <Link to="/login" className="hover:underline">
                 Login
@@ -88,7 +88,10 @@ const Footer: React.FC = () => {
         {/* Contact Section */}
         <div className="ml-12 md:ml-0">
           <h2 className="mb-4 text-xl underline">Contact Us</h2>
-          <p className="text-md">Have questions? Reach out via email:</p>
+          <div className="flex flex-col lg:flex-row">
+            <p className="text-md">Have questions?&nbsp;</p>
+            <p className="">Reach out via email:</p>
+          </div>
           <p
             className="text-md mt-3 cursor-pointer hover:underline"
             onClick={handleEmailClick}
@@ -98,7 +101,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="mr-24 mt-16 flex justify-end text-sm underline">
+      <div className="mt-16 flex justify-center text-sm underline sm:mr-24 sm:justify-end">
         <p>&copy; 2025 Jumble</p>
       </div>
     </footer>

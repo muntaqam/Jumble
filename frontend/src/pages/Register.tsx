@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 import { Checkbox } from "@/components/ui/checkbox";
-import logo from "../assets/images/logo.png";
+import logo from "/logo.png";
 
 const Register: React.FC = () => {
   return (
-    <section className="font-adlam bg-gray-50 py-60">
+    <section className="bg-gray-50 py-60 font-adlam">
       <div className="mx-auto flex flex-col items-center px-6 py-8 lg:py-0">
         <img className="mb-6 w-2/3 sm:w-1/3 md:w-1/6" src={logo} alt="logo" />
         <div className="w-full rounded-lg bg-white shadow sm:max-w-md md:mt-0 xl:p-0">
