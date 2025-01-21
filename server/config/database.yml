@@ -22,8 +22,8 @@ default: &default
 development:
   <<: *default
   database: jumble_development
-  username: azimr
-  password: CookieFeline11
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   host: localhost
 
   # The specified database role being used to connect to PostgreSQL.
@@ -59,8 +59,8 @@ development:
 test:
   <<: *default
   database: jumble_test
-  username: azimr
-  password: CookieFeline11
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   host: localhost
 
 # As with config/credentials.yml, you never want to store sensitive information,
