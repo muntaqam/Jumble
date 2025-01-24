@@ -8,9 +8,9 @@ import logo from "/logo.png";
 
 const Register: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-60 font-adlam">
-      <div className="mx-auto flex flex-col items-center px-6 py-8 lg:py-0">
-        <img className="mb-6 w-2/3 sm:w-1/3 md:w-1/6" src={logo} alt="logo" />
+    <section className="bg-gray-50 py-12 font-adlam sm:py-32 md:py-40 lg:py-60">
+      <div className="mx-auto flex flex-col items-center px-6 lg:py-0">
+        <img className="mb-6 w-7/12 sm:w-1/3 lg:w-1/6" src={logo} alt="logo" />
         <div className="w-full rounded-lg bg-white shadow sm:max-w-md md:mt-0 xl:p-0">
           <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
             <h1 className="text-xl leading-tight tracking-tight text-gray-900 md:text-2xl">
