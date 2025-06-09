@@ -4,14 +4,15 @@ import React from "react";
 import { Switch } from "@/components/ui/switch";
 import { Link } from "react-router-dom";
 
-import banner from "../assets/images/banner.png";
+// import banner from "../assets/images/banner.png";
+import banner from "../assets/images/jumble_banner.png";
+import wordhunter from "../assets/images/wordhunter.png";
 
 const games = [
   {
     id: 1,
     title: "Word Hunter",
-    image:
-      "https://play-lh.googleusercontent.com/buGx7Qx6e_M9DUqiwABScUWx-xgiUSJBURBhivVel8OdVVzqOB2F5V3Nt60Ov8Qudw",
+    image: wordhunter,
   },
   {
     id: 2,
@@ -30,24 +31,29 @@ const games = [
 const Landing: React.FC = () => {
   return (
     <div>
-      <img
-        src={banner}
-        className="w-full object-cover object-center shadow-2xl md:h-80 lg:h-96"
-      />
+      <div className="flex justify-center items-center">
+        <p className="font-adlam text-white text-6xl w-1/3 space-y-6">
+          <div>Party Games, Anywhere.</div>
+          <div className="text-sm">
+            Play with Friends or Against AI opponents
+          </div>
+        </p>
+        <img className="w-5/12" src={banner}></img>
+      </div>
 
       {/* center content */}
-      <div className="flex flex-col items-center gap-8 bg-[#d9d9d9] px-8 py-16 font-adlam md:flex-row">
+      <div className="flex flex-col justify-center gap-8 px-8 pb-16 font-adlam md:flex-row">
         {/* games */}
-        <div className="h-1/2 w-11/12 rounded-sm bg-white shadow-2xl md:w-2/3">
-          <label className="ml-12 mt-4 inline-block align-middle text-xl font-black">
-            START A NEW GAME
+        <div className="h-1/2 w-1/2 rounded-3xl bg-[#b1dfbc] shadow-2xl">
+          <label className="ml-12 mt-4 inline-block align-middle text-xl text-[#01685e]">
+            Choose a Game
           </label>
           {/* Map through games */}
           <div className="mt-2 grid gap-6 px-12 sm:grid-cols-2 lg:grid-cols-3">
             {games.map((game) => (
               <div
                 key={game.id}
-                className="rounded-lg border bg-[#f8f8f8] p-4 shadow-md transition duration-150 ease-in-out hover:shadow-lg"
+                className="rounded-lg border bg-[#fcf8cf] p-4 shadow-md transition duration-150 ease-in-out hover:shadow-lg"
               >
                 <img
                   src={game.image}
@@ -72,23 +78,20 @@ const Landing: React.FC = () => {
         </div>
 
         {/* right side */}
-        <div className="flex w-11/12 flex-col justify-between gap-6 md:w-1/3">
+        <div className="flex w-11/12 flex-col gap-6 md:w-1/4">
           {/* join room */}
-          <div className="flex flex-col rounded-sm bg-white pb-6 shadow-xl">
-            <label className="ml-6 mt-4 inline-block align-middle text-xl font-black">
+          <div className="flex flex-col rounded-3xl bg-[#01685e] pb-6 px-6 shadow-xl space-y-2">
+            <label className="mt-4 inline-block align-middle text-xl text-white">
               Join a Room
             </label>
-            <label className="ml-6 mt-2 inline-block align-middle text-sm font-black font-normal">
-              Room Code:
-            </label>
-            <div className="ml-6 flex flex-col justify-between space-y-2 lg:flex-row lg:space-y-0">
+            <div className="h-14 w-full flex flex-col bg-[#febd4f] rounded-xl space-y-2 lg:flex-row lg:space-y-0">
               <input
                 type="number"
                 inputMode="numeric"
                 min="1"
                 max="9999"
                 maxLength={4}
-                className="no-spinners mr-6 mt-1 appearance-none rounded-sm border px-2 py-1 shadow-sm outline-1 outline-[#4050a1] lg:mr-0 lg:w-2/3"
+                className="no-spinners appearance-none rounded-xl text-[#876124] bg-[#febd4f] placeholder-[#876124] pl-4 h-full shadow-sm outline-none w-11/12"
                 placeholder="Enter Room Code"
                 // limit code input to 4
                 onInput={(e) => {
@@ -101,7 +104,7 @@ const Landing: React.FC = () => {
 
               <button
                 type="submit"
-                className="mr-6 rounded-md bg-[#5C72E6] py-1 text-white transition duration-150 ease-in-out hover:bg-[#4050a1] lg:px-6 xl:px-7"
+                className="bg-[#ffa93d] text-[#876124] rounded-r-xl rounded-2xl transition duration-150 h-full w-4/6 ease-in-out hover:brightness-90 "
               >
                 Join
               </button>
@@ -109,14 +112,14 @@ const Landing: React.FC = () => {
           </div>
 
           {/* leaderboard */}
-          <div className="flex flex-col rounded-sm bg-white pb-6 shadow-xl">
-            <label className="ml-6 mt-4 inline-block align-middle text-xl font-black">
+          <div className="flex flex-col rounded-3xl bg-[#01685e] pb-6 px-6 shadow-xl space-y-2">
+            <label className="mt-4 inline-block align-middle text-xl text-white">
               Leaderboards
             </label>
-            <div className="flex items-center justify-center">
+            <div className="h-14 w-full flex flex-col bg-[#febd4f] rounded-xl space-y-2 hover:brightness-90 transition-all ease-in-out duration-200 lg:flex-row lg:space-y-0">
               <Link
                 to="/leaderboard"
-                className="mx-6 mt-2 w-full self-center rounded-md bg-[#5C72E6] px-2 py-2 text-center text-white transition duration-150 ease-in-out hover:bg-[#4050a1]"
+                className="text-[#876124] rounded-r-xl rounded-2xl items-center flex justify-center w-full transition duration-150 h-full ease-in-out hover:brightness-90 "
               >
                 View
               </Link>

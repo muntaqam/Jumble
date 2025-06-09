@@ -7,19 +7,19 @@ import logo from "/logo.png";
 
 const Login: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-12 font-adlam sm:py-32 md:py-40 lg:py-60">
-      <div className="mx-auto flex flex-col items-center px-6 lg:py-0">
-        <img className="mb-6 w-7/12 sm:w-1/3 lg:w-1/6" src={logo} alt="logo" />
-        <div className="w-full rounded-lg bg-white shadow sm:max-w-md md:mt-0 xl:p-0">
+    <section className="bg-[#0da49d] font-adlam w-full py-20 text-white">
+      <div className="flex flex-col items-center">
+        <label className="text-5xl pb-12">Jumble</label>
+        <div className="w-full rounded-lg bg-[#b1dfbc] shadow sm:max-w-md md:mt-0 xl:p-0">
           <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
-            <h1 className="text-xl leading-tight tracking-tight text-gray-900 md:text-2xl">
+            <h1 className="text-xl leading-tight tracking-tight text-[#01685e] md:text-2xl">
               Login
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
               <div>
                 <label
                   htmlFor="email"
-                  className="mb-2 block text-sm font-medium text-gray-900"
+                  className="mb-2 block text-sm font-medium text-[#01685e]"
                 >
                   Your email
                 </label>
@@ -27,7 +27,7 @@ const Login: React.FC = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 outline-1 outline-[#4050a1]"
+                  className="block w-full rounded-lg border border-gray-300 bg-[#fcf8cf] p-2.5 text-sm text-[#01685e] outline-none placeholder-[#01685e] placeholder-opacity-30"
                   placeholder="name@company.com"
                   required
                 />
@@ -35,7 +35,7 @@ const Login: React.FC = () => {
               <div>
                 <label
                   htmlFor="password"
-                  className="mb-2 block text-sm font-medium text-gray-900"
+                  className="mb-2 block text-sm font-medium text-[#01685e]"
                 >
                   Password
                 </label>
@@ -44,14 +44,14 @@ const Login: React.FC = () => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 outline-1 outline-[#4050a1]"
+                  className="block w-full rounded-lg border border-gray-300 bg-[#fcf8cf] p-2.5 text-sm text-[#01685e] outline-none placeholder-[#01685e] placeholder-opacity-30"
                   required
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full rounded-lg bg-[#5C72E6] px-5 py-2.5 text-center text-sm font-medium text-white outline-1 outline-[#4050a1] transition duration-150 ease-in-out hover:bg-[#4050a1]"
+                className="w-full rounded-lg bg-[#01685e] px-5 py-2.5 text-center text-sm font-medium text-white outline-none placeholder-[#01685e] placeholder-opacity-30 transition duration-150 ease-in-out hover:brightness-90"
               >
                 Login
               </button>
@@ -59,7 +59,7 @@ const Login: React.FC = () => {
                 Don't have an account?{" "}
                 <Link
                   to="/register"
-                  className="font-medium text-[#5C72E6] hover:underline"
+                  className="font-medium text-[#01685e] hover:underline"
                 >
                   Register
                 </Link>
