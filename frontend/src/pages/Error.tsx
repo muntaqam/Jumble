@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const Error: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-slate-100 py-96 font-adlam">
+    <div className="flex flex-col items-center justify-center text-white py-40 font-adlam">
       <h1 className="text-6xl">404</h1>
       <p className="mt-4 text-2xl">Oops! Page Not Found</p>
       <p className="mt-2 text-lg">The page you're looking for doesn't exist.</p>
       <Link
         to="/"
-        className="mt-6 rounded-md bg-[#5C72E6] px-6 py-2 text-white transition duration-150 ease-in-out hover:bg-[#4050a1]"
+        className="mt-6 rounded-md bg-[#01685e] px-6 py-2 text-white transition duration-150 ease-in-out hover:brightness-90"
       >
         Back to Home
       </Link>

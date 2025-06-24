@@ -4,23 +4,23 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 import { Checkbox } from "@/components/ui/checkbox";
-import logo from "/logo.png";
 
 const Register: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-12 font-adlam sm:py-32 md:py-40 lg:py-60">
+    <section className="w-full bg-[#0da49d] py-20 font-adlam text-white">
       <div className="mx-auto flex flex-col items-center px-6 lg:py-0">
-        <img className="mb-6 w-7/12 sm:w-1/3 lg:w-1/6" src={logo} alt="logo" />
-        <div className="w-full rounded-lg bg-white shadow sm:max-w-md md:mt-0 xl:p-0">
+        <label className="pb-12 text-5xl">Jumble</label>
+
+        <div className="w-full rounded-lg bg-[#b1dfbc] shadow sm:max-w-md md:mt-0 xl:p-0">
           <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
-            <h1 className="text-xl leading-tight tracking-tight text-gray-900 md:text-2xl">
+            <h1 className="text-xl leading-tight tracking-tight text-[#01585e] md:text-2xl">
               Create an account
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
               <div>
                 <label
                   htmlFor="email"
-                  className="mb-2 block text-sm font-medium text-gray-900"
+                  className="mb-2 block text-sm font-medium text-[#01585e]"
                 >
                   Your email
                 </label>
@@ -29,7 +29,7 @@ const Register: React.FC = () => {
                   name="email"
                   id="email"
                   maxLength={50}
-                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 outline-1 outline-[#4050a1]"
+                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] placeholder-[#01685e] placeholder-opacity-30 outline-none"
                   placeholder="name@company.com"
                   required
                 />
@@ -37,7 +37,7 @@ const Register: React.FC = () => {
               <div>
                 <label
                   htmlFor="password"
-                  className="mb-2 block text-sm font-medium text-gray-900"
+                  className="mb-2 block text-sm font-medium text-[#01585e]"
                 >
                   Password
                 </label>
@@ -47,14 +47,14 @@ const Register: React.FC = () => {
                   id="password"
                   maxLength={50}
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 outline-1 outline-[#4050a1]"
+                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] placeholder-[#01685e] placeholder-opacity-30 outline-none"
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="confirm-password"
-                  className="mb-2 block text-sm font-medium text-gray-900"
+                  className="mb-2 block text-sm font-medium text-[#01585e]"
                 >
                   Confirm password
                 </label>
@@ -64,7 +64,7 @@ const Register: React.FC = () => {
                   id="confirm-password"
                   maxLength={50}
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 outline-1 outline-[#4050a1]"
+                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] placeholder-[#01685e] placeholder-opacity-30 outline-none"
                   required
                 />
               </div>
@@ -76,7 +76,7 @@ const Register: React.FC = () => {
                   <label htmlFor="terms" className="font-light text-gray-500">
                     I accept the{" "}
                     <a
-                      className="font-medium text-[#5C72E6] hover:underline"
+                      className="font-medium text-[#01685e] hover:underline"
                       href="#"
                     >
                       Terms and Conditions
@@ -86,7 +86,7 @@ const Register: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="w-full rounded-lg bg-[#5C72E6] px-5 py-2.5 text-center text-sm font-medium text-white transition duration-150 ease-in-out hover:bg-[#4050a1]"
+                className="w-full rounded-lg bg-[#01685e] px-5 py-2.5 text-center text-sm font-medium text-white transition duration-150 ease-in-out hover:brightness-90"
               >
                 Create an account
               </button>
@@ -94,7 +94,7 @@ const Register: React.FC = () => {
                 Already have an account?{" "}
                 <Link
                   to="/login"
-                  className="font-medium text-[#5C72E6] hover:underline"
+                  className="font-medium text-[#01685e] hover:underline"
                 >
                   Login
                 </Link>

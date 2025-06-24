@@ -7,12 +7,12 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const About: React.FC = () => {
   return (
-    <div className="font-adlam bg-slate-100 text-gray-700">
+    <div className="font-adlam bg-[#0da49d] text-white">
       {/* about us section */}
-      <section className="flex flex-col bg-slate-300 p-20 shadow-md md:flex-row">
+      <section className="flex flex-col bg-[#01685e] p-20 shadow-md md:flex-row">
         <div className="flex flex-col justify-center">
           <h1 className="text-center text-4xl md:text-start">About Us</h1>
-          <p className="mb-4 mt-4 text-center text-lg text-gray-600 md:mb-0 md:text-start">
+          <p className="mb-4 mt-4 text-center text-lg md:mb-0 md:text-start">
             Welcome to <strong>Jumble!</strong> We're a small group of friends
             dedicated to building a fun and engaging party game platform.
           </p>
@@ -41,7 +41,7 @@ const About: React.FC = () => {
             <h2 className="text-center text-3xl md:text-start">
               Creating a Fun Platform for Friends Worldwide
             </h2>
-            <p className="mt-4 text-center text-gray-600 md:text-start">
+            <p className="mt-4 text-center  md:text-start">
               At the core of our mission is the belief in the power of games to
               bring people together and have fun. We aim to build a platform
               where friend groups worldwide can find something to enjoy and
@@ -57,13 +57,13 @@ const About: React.FC = () => {
           <div className="flex w-full flex-col justify-center lg:w-11/12">
             <div className="w-full lg:w-11/12">
               <h2 className="text-center text-3xl lg:text-start">Our Story</h2>
-              <p className="mt-4 text-center text-gray-600 lg:text-start">
+              <p className="mt-4 text-center  lg:text-start">
                 Throughout the years, our friend group has countless hours
                 playing and laughing together over our favorite party games. Two
                 of us being avid tech enthusiats, we wanted to build our own
                 platform to share the fun we had with people around the world.
               </p>
-              <p className="mt-4 text-center text-gray-600 lg:text-start">
+              <p className="mt-4 text-center  lg:text-start">
                 Being a small group of developers in college, we'd appreciate
                 any feedback!
               </p>

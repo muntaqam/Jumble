@@ -4,7 +4,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
-import logo from "/logo.png";
 
 import { toast } from "@/hooks/use-toast";
 
@@ -15,17 +14,17 @@ const Footer: React.FC = () => {
     toast({
       title: "Copied to clipboard!",
       description: "Email address has been copied successfully.",
-      duration: 1500,
+      duration: 800,
     });
   };
 
   return (
-    <footer className="bg-[#5C72E6] py-16 font-adlam text-white">
+    <footer className="bg-[#01685e] py-16 font-adlam text-white">
       <div className="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
         {/* Socials Section */}
         <div className="ml-12 flex flex-col">
-          <img src={logo} className="mb-4 w-1/3" />
-
+          {/* <img src={logo} className="mb-4 w-1/3" /> */}
+          <label className="mb-4 text-3xl underline">Jumble</label>
           <div className="flex space-x-6">
             <a
               href="https://github.com/Aziiimm/mlkj"
@@ -33,7 +32,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <FaGithub className="text-3xl transition duration-150 ease-in-out hover:-translate-y-1" />
+              <FaGithub className="text-3xl transition duration-150 ease-in-out hover:opacity-80" />
             </a>
             <a
               href="https://discord.gg/hVrM87YGte"
@@ -41,7 +40,7 @@ const Footer: React.FC = () => {
               rel="noopener noreferrer"
               aria-label="Discord"
             >
-              <FaDiscord className="text-3xl transition duration-150 ease-in-out hover:-translate-y-1" />
+              <FaDiscord className="text-3xl transition duration-150 ease-in-out hover:opacity-80" />
             </a>
             <a
               href="https://www.linkedin.com/in/azim-rahat/"
@@ -53,7 +52,7 @@ const Footer: React.FC = () => {
                   "https://www.linkedin.com/in/ivan-chen11/";
               }}
             >
-              <FaLinkedin className="text-3xl transition duration-150 ease-in-out hover:-translate-y-1" />
+              <FaLinkedin className="text-3xl transition duration-150 ease-in-out hover:opacity-80" />
             </a>
           </div>
         </div>
