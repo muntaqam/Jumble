@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 import { Checkbox } from "@/components/ui/checkbox";
-import logo from "/logo.png";
 
 const Register: React.FC = () => {
   return (
-    <section className="bg-[#0da49d] font-adlam w-full py-20 text-white">
+    <section className="w-full bg-[#0da49d] py-20 font-adlam text-white">
       <div className="mx-auto flex flex-col items-center px-6 lg:py-0">
-        <label className="text-5xl pb-12">Jumble</label>
+        <label className="pb-12 text-5xl">Jumble</label>
 
         <div className="w-full rounded-lg bg-[#b1dfbc] shadow sm:max-w-md md:mt-0 xl:p-0">
           <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
@@ -30,7 +29,7 @@ const Register: React.FC = () => {
                   name="email"
                   id="email"
                   maxLength={50}
-                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] outline-none placeholder-[#01685e] placeholder-opacity-30"
+                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] placeholder-[#01685e] placeholder-opacity-30 outline-none"
                   placeholder="name@company.com"
                   required
                 />
@@ -48,7 +47,7 @@ const Register: React.FC = () => {
                   id="password"
                   maxLength={50}
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] outline-none placeholder-[#01685e] placeholder-opacity-30"
+                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] placeholder-[#01685e] placeholder-opacity-30 outline-none"
                   required
                 />
               </div>
@@ -65,7 +64,7 @@ const Register: React.FC = () => {
                   id="confirm-password"
                   maxLength={50}
                   placeholder="••••••••"
-                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] outline-none placeholder-[#01685e] placeholder-opacity-30"
+                  className="block w-full rounded-lg border bg-[#fcf8cf] p-2.5 text-sm text-[#01585e] placeholder-[#01685e] placeholder-opacity-30 outline-none"
                   required
                 />
               </div>

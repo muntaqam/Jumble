@@ -4,7 +4,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
-import logo from "/logo.png";
 
 import { toast } from "@/hooks/use-toast";
 
@@ -25,7 +24,7 @@ const Footer: React.FC = () => {
         {/* Socials Section */}
         <div className="ml-12 flex flex-col">
           {/* <img src={logo} className="mb-4 w-1/3" /> */}
-          <label className="text-3xl mb-4 underline">Jumble</label>
+          <label className="mb-4 text-3xl underline">Jumble</label>
           <div className="flex space-x-6">
             <a
               href="https://github.com/Aziiimm/mlkj"
