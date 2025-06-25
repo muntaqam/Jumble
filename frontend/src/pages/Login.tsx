@@ -5,7 +5,7 @@ import React from "react";
 
 const Login: React.FC = () => {
   return (
-    <section className="w-full bg-[#0da49d] py-20 font-adlam text-white">
+    <section className="w-full bg-[#0da49d] px-6 py-28 font-adlam text-white md:py-48 lg:py-52 2xl:py-60">
       <div className="flex flex-col items-center">
         <label className="pb-12 text-5xl">Jumble</label>
         <div className="w-full rounded-lg bg-[#b1dfbc] shadow sm:max-w-md md:mt-0 xl:p-0">

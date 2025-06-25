@@ -19,10 +19,10 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#01685e] py-16 font-adlam text-white">
-      <div className="container grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
+    <footer className="flex flex-col items-center bg-[#01685e] py-16 font-adlam text-white">
+      <div className="container grid w-7/12 grid-cols-1 gap-8 md:w-8/12 md:grid-cols-3 lg:w-9/12 xl:w-10/12 2xl:w-8/12">
         {/* Socials Section */}
-        <div className="ml-12 flex flex-col">
+        <div className="flex flex-col">
           {/* <img src={logo} className="mb-4 w-1/3" /> */}
           <label className="mb-4 text-3xl underline">Jumble</label>
           <div className="flex space-x-6">
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Navigation Section */}
-        <div className="ml-12 md:ml-0">
+        <div className="md:ml-0">
           <h2 className="mb-4 text-xl underline">Navigation</h2>
           <ul className="grid grid-cols-2 gap-3 md:grid-cols-none">
             <li>
@@ -85,9 +85,9 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="ml-12 md:ml-0">
+        <div className="md:ml-0">
           <h2 className="mb-4 text-xl underline">Contact Us</h2>
-          <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col">
             <p className="text-md">Have questions?&nbsp;</p>
             <p className="">Reach out via email:</p>
           </div>
@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-16 flex justify-center text-sm underline sm:mr-24 sm:justify-end">
+      <div className="container mt-12 w-7/12 text-left text-sm underline md:w-8/12 lg:w-9/12 xl:w-10/12 2xl:w-8/12">
         <p>&copy; 2025 Jumble</p>
       </div>
     </footer>

@@ -4,6 +4,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1920px", // for 2K displays
+        "4k": "2560px", // for 4K displays
+      },
       fontFamily: {
         adlam: ["adlam"],
       },

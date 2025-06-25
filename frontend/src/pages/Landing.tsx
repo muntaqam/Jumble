@@ -4,7 +4,6 @@ import React from "react";
 import { Switch } from "@/components/ui/switch";
 import { Link } from "react-router-dom";
 
-// import banner from "../assets/images/banner.png";
 import banner from "../assets/images/jumble_banner.png";
 import wordhunter from "../assets/images/wordhunter.png";
 
@@ -17,112 +16,105 @@ const games = [
   {
     id: 2,
     title: "Timebomb",
-    image:
-      "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA3L3Jhd3BpeGVsX29mZmljZV8yOV92ZWN0b3JfZmxhdF9pbGx1c3RyYXRpb25fb2ZfYV9ibGFja19ib21iX3dpdF9kNDY5Yjg3MC0wY2U1LTQ0YjktYTllMi0zNDFiZTAxY2YzNGZfMS5wbmc.png",
-  },
-  {
-    id: 3,
-    title: "Chameleon",
-    image:
-      "https://www.shutterstock.com/image-vector/cute-small-green-chameleon-lizard-600nw-1614232648.jpg",
+    image: wordhunter, // Placeholder image, replace with actual Timebomb image
   },
 ];
 
 const Landing: React.FC = () => {
   return (
     <div>
-      <div className="flex justify-center items-center">
-        <p className="font-adlam text-white text-6xl w-1/3 space-y-6">
-          <div>Party Games, Anywhere.</div>
-          <div className="text-sm">
-            Play with Friends or Against AI opponents
-          </div>
-        </p>
-        <img className="w-5/12" src={banner}></img>
+      <div className="3xl:w-7/12 mx-auto w-8/12 pt-8">
+        <div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between">
+          <p className="3xl:text-7xl mt-4 space-y-2 text-center font-adlam text-4xl text-white sm:text-center sm:text-5xl md:mt-0 md:text-5xl lg:w-5/12 lg:text-start lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <div>Party Games, Anywhere.</div>
+            <div className="text-nowrap text-center text-sm sm:text-center sm:text-base lg:text-start 2xl:text-2xl">
+              Play with Friends or Against AI opponents
+            </div>
+          </p>
+          <img className="w-full md:w-9/12 lg:w-6/12 xl:w-5/12" src={banner} />
+        </div>
       </div>
 
-      {/* center content */}
-      <div className="flex flex-col justify-center gap-8 px-8 pb-16 font-adlam md:flex-row">
-        {/* games */}
-        <div className="h-1/2 w-1/2 rounded-3xl bg-[#b1dfbc] shadow-2xl">
-          <label className="ml-12 mt-4 inline-block align-middle text-xl text-[#01685e]">
-            Choose a Game
-          </label>
-          {/* Map through games */}
-          <div className="mt-2 grid gap-6 px-12 sm:grid-cols-2 lg:grid-cols-3">
-            {games.map((game) => (
-              <div
-                key={game.id}
-                className="rounded-lg border bg-[#fcf8cf] p-4 shadow-md transition duration-150 ease-in-out hover:shadow-lg"
-              >
-                <img
-                  src={game.image}
-                  alt={game.title}
-                  className="h-40 w-full rounded-md object-contain"
-                />
-                <h3 className="mt-4 text-center text-lg">{game.title}</h3>
-              </div>
-            ))}
-          </div>
-          <div className="pb-10">
-            <div className="">
-              <div className="mt-6 flex w-full justify-between px-12">
-                <label className="">Play Solo</label>
+      <div className="3xl:w-7/12 mx-auto w-8/12 pb-12 pt-8 sm:pb-40 xl:pb-24">
+        <div className="flex flex-col items-center justify-center gap-8 font-adlam lg:flex-row xl:justify-between">
+          {/* Game Selector */}
+          <div className="mt-4 rounded-3xl bg-[#b1dfbc] px-8 shadow-2xl lg:w-7/12 2xl:px-16">
+            <label className="inline-block w-full py-4 text-center align-middle text-2xl text-[#01685e] lg:text-start">
+              Choose a Game
+            </label>
+            <div className="grid w-full grid-cols-2 gap-4 md:px-8 lg:grid-cols-2 lg:px-0">
+              {games.map((game) => (
+                <div
+                  key={game.id}
+                  className="flex flex-col items-center rounded-lg border bg-[#fcf8cf] p-2 shadow-md transition duration-150 ease-in-out hover:shadow-lg sm:px-2 sm:py-4 lg:px-0"
+                >
+                  <img
+                    src={game.image}
+                    alt={game.title}
+                    className="rounded-md object-contain sm:w-9/12 md:w-8/12"
+                  />
+                  <h3 className="w-full text-nowrap text-center text-xs sm:text-base sm:text-lg lg:text-sm xl:text-lg 2xl:text-xl">
+                    {game.title}
+                  </h3>
+                </div>
+              ))}
+            </div>
+            <div className="pb-10">
+              <div className="mt-6 flex w-full justify-between px-4">
+                <label>Play Solo</label>
                 <Switch />
               </div>
-              <div className="mt-1 w-full px-12 text-xs font-light text-gray-600 hover:cursor-default sm:text-base">
+              <div className="mt-2 w-full px-4 text-xs font-light text-gray-600 hover:cursor-default sm:text-base">
                 You will be matched against an AI player. No account necessary!
               </div>
             </div>
           </div>
-        </div>
 
-        {/* right side */}
-        <div className="flex w-11/12 flex-col gap-6 md:w-1/4">
-          {/* join room */}
-          <div className="flex flex-col rounded-3xl bg-[#01685e] pb-6 px-6 shadow-xl space-y-2">
-            <label className="mt-4 inline-block align-middle text-xl text-white">
-              Join a Room
-            </label>
-            <div className="h-14 w-full flex flex-col bg-[#febd4f] rounded-xl space-y-2 lg:flex-row lg:space-y-0">
-              <input
-                type="number"
-                inputMode="numeric"
-                min="1"
-                max="9999"
-                maxLength={4}
-                className="no-spinners appearance-none rounded-xl text-[#876124] bg-[#febd4f] placeholder-[#876124] pl-4 h-full shadow-sm outline-none w-11/12"
-                placeholder="Enter Room Code"
-                // limit code input to 4
-                onInput={(e) => {
-                  const target = e.target as HTMLInputElement;
-                  if (target.value.length > 4) {
-                    target.value = target.value.slice(0, 4);
-                  }
-                }}
-              />
-
-              <button
-                type="submit"
-                className="bg-[#ffa93d] text-[#876124] rounded-r-xl rounded-2xl transition duration-150 h-full w-4/6 ease-in-out hover:brightness-90 "
-              >
-                Join
-              </button>
+          {/* Right Side (Join + Leaderboard) */}
+          <div className="flex w-full flex-col justify-center gap-6 md:flex-row lg:w-4/12 lg:flex-col">
+            {/* Join Room */}
+            <div className="flex w-full flex-col space-y-2 rounded-3xl bg-[#01685e] px-6 pb-6 shadow-xl">
+              <label className="mt-4 inline-block align-middle text-xl text-white">
+                Join a Room
+              </label>
+              <div className="flex h-14 w-full flex-row rounded-xl bg-[#febd4f] lg:space-y-0">
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  min="1"
+                  max="9999"
+                  maxLength={4}
+                  className="no-spinners h-full w-11/12 appearance-none rounded-xl bg-[#febd4f] pl-4 text-[#876124] placeholder-[#876124] shadow-sm outline-none"
+                  placeholder="Enter Code"
+                  onInput={(e) => {
+                    const target = e.target as HTMLInputElement;
+                    if (target.value.length > 4) {
+                      target.value = target.value.slice(0, 4);
+                    }
+                  }}
+                />
+                <button
+                  type="submit"
+                  className="h-full w-3/6 rounded-2xl rounded-r-xl bg-[#ffa93d] text-[#876124] transition duration-150 ease-in-out hover:brightness-90"
+                >
+                  Join
+                </button>
+              </div>
             </div>
-          </div>
 
-          {/* leaderboard */}
-          <div className="flex flex-col rounded-3xl bg-[#01685e] pb-6 px-6 shadow-xl space-y-2">
-            <label className="mt-4 inline-block align-middle text-xl text-white">
-              Leaderboards
-            </label>
-            <div className="h-14 w-full flex flex-col bg-[#febd4f] rounded-xl space-y-2 hover:brightness-90 transition-all ease-in-out duration-200 lg:flex-row lg:space-y-0">
-              <Link
-                to="/leaderboard"
-                className="text-[#876124] rounded-r-xl rounded-2xl items-center flex justify-center w-full transition duration-150 h-full ease-in-out hover:brightness-90 "
-              >
-                View
-              </Link>
+            {/* Leaderboard */}
+            <div className="flex w-full flex-col space-y-2 rounded-3xl bg-[#01685e] px-6 pb-6 shadow-xl">
+              <label className="mt-4 inline-block w-1/2 align-middle text-xl text-white">
+                Leaderboards
+              </label>
+              <div className="flex h-14 w-full flex-col space-y-2 rounded-xl bg-[#febd4f] transition-all duration-200 ease-in-out hover:brightness-90 lg:flex-row lg:space-y-0">
+                <Link
+                  to="/leaderboard"
+                  className="flex h-full w-full items-center justify-center rounded-2xl rounded-r-xl text-[#876124] transition duration-150 ease-in-out hover:brightness-90"
+                >
+                  View
+                </Link>
+              </div>
             </div>
           </div>
         </div>

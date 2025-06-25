@@ -7,7 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 const Register: React.FC = () => {
   return (
-    <section className="w-full bg-[#0da49d] py-20 font-adlam text-white">
+    <section className="w-full bg-[#0da49d] px-6 py-28 font-adlam text-white md:py-48 lg:py-52 2xl:py-60">
       <div className="mx-auto flex flex-col items-center px-6 lg:py-0">
         <label className="pb-12 text-5xl">Jumble</label>
 
