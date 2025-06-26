@@ -7,10 +7,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 const Register: React.FC = () => {
   return (
-    <section className="w-full bg-[#0da49d] px-6 py-28 font-adlam text-white md:py-48 lg:py-52 2xl:py-60">
-      <div className="mx-auto flex flex-col items-center px-6 lg:py-0">
-        <label className="pb-12 text-5xl">Jumble</label>
-
+    <section className="mt-24 h-[calc(70vh)] w-full bg-[#0da49d] px-6 font-adlam text-white">
+      <div className="mx-auto flex flex-col items-center">
         <div className="w-full rounded-lg bg-[#b1dfbc] shadow sm:max-w-md md:mt-0 xl:p-0">
           <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
             <h1 className="text-xl leading-tight tracking-tight text-[#01585e] md:text-2xl">
@@ -59,7 +57,7 @@ const Register: React.FC = () => {
                   Confirm password
                 </label>
                 <input
-                  type="confirm-password"
+                  type="password"
                   name="confirm-password"
                   id="confirm-password"
                   maxLength={50}

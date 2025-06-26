@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             >
               <FaDiscord className="text-3xl transition duration-150 ease-in-out hover:opacity-80" />
             </a>
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/azim-rahat/"
               target="_blank"
               onClick={(e) => {
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               }}
             >
               <FaLinkedin className="text-3xl transition duration-150 ease-in-out hover:opacity-80" />
-            </a>
+            </a> */}
           </div>
         </div>
 

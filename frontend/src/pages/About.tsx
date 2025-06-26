@@ -7,12 +7,14 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const About: React.FC = () => {
   return (
-    <div className="font-adlam bg-[#0da49d] text-white">
+    <div className="bg-[#0da49d] font-adlam text-white">
       {/* about us section */}
       <section className="flex flex-col bg-[#01685e] p-20 shadow-md md:flex-row">
         <div className="flex flex-col justify-center">
-          <h1 className="text-center text-4xl md:text-start">About Us</h1>
-          <p className="mb-4 mt-4 text-center text-lg md:mb-0 md:text-start">
+          <h1 className="text-center text-4xl md:text-start lg:text-5xl">
+            About Us
+          </h1>
+          <p className="mb-4 mt-4 text-center text-lg md:mb-0 md:text-start lg:text-xl 2xl:text-2xl">
             Welcome to <strong>Jumble!</strong> We're a small group of friends
             dedicated to building a fun and engaging party game platform.
           </p>
@@ -37,11 +39,13 @@ const About: React.FC = () => {
             />
           </div>
           <div className="mt-8 flex w-11/12 flex-col justify-center md:mt-0">
-            <h2 className="text-center text-3xl md:text-start">Our Mission:</h2>
-            <h2 className="text-center text-3xl md:text-start">
+            <h2 className="text-center text-3xl md:text-start lg:text-4xl">
+              Our Mission:
+            </h2>
+            <h2 className="text-center text-3xl md:text-start lg:text-4xl">
               Creating a Fun Platform for Friends Worldwide
             </h2>
-            <p className="mt-4 text-center  md:text-start">
+            <p className="mt-4 text-center text-lg md:text-start lg:text-xl 2xl:text-2xl">
               At the core of our mission is the belief in the power of games to
               bring people together and have fun. We aim to build a platform
               where friend groups worldwide can find something to enjoy and
@@ -56,21 +60,23 @@ const About: React.FC = () => {
         <div className="flex flex-col justify-center md:justify-start lg:flex-row">
           <div className="flex w-full flex-col justify-center lg:w-11/12">
             <div className="w-full lg:w-11/12">
-              <h2 className="text-center text-3xl lg:text-start">Our Story</h2>
-              <p className="mt-4 text-center  lg:text-start">
+              <h2 className="text-center text-3xl lg:text-start lg:text-4xl">
+                Our Story
+              </h2>
+              <p className="mt-4 text-center text-lg lg:text-start lg:text-xl 2xl:text-2xl">
                 Throughout the years, our friend group has countless hours
                 playing and laughing together over our favorite party games. Two
                 of us being avid tech enthusiats, we wanted to build our own
                 platform to share the fun we had with people around the world.
               </p>
-              <p className="mt-4 text-center  lg:text-start">
+              <p className="mt-4 text-center text-lg lg:text-start lg:text-xl 2xl:text-2xl">
                 Being a small group of developers in college, we'd appreciate
                 any feedback!
               </p>
             </div>
 
             <div className="w-full lg:w-11/12">
-              <h2 className="mt-8 text-center text-xl sm:mt-4 lg:text-start">
+              <h2 className="mt-8 text-center text-xl sm:mt-4 lg:text-start lg:text-2xl">
                 Connect with us on LinkedIn
               </h2>
               <div className="mt-4 flex flex-col items-center justify-around gap-10 sm:flex-row md:gap-20 lg:justify-between lg:gap-0">
