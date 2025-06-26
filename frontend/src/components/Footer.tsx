@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaDiscord } from "react-icons/fa";
 
 import { toast } from "@/hooks/use-toast";
 
