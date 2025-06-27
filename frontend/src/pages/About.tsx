@@ -119,7 +119,7 @@ const About: React.FC = () => {
                   target="_blank"
                 >
                   <img
-                    src="https://imgcdn.stablediffusionweb.com/2024/10/18/9940e710-a1d8-481a-b36d-6414097295da.jpg"
+                    src=""
                     alt="Arvin"
                     className="h-24 w-24 rounded-full object-cover shadow-xl"
                   />
