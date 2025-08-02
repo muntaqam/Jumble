@@ -20,3 +20,9 @@ goal is to make a solid base for more games to be added later. want to keep ever
 
 dev env: windows 11, will prob use wsl2 for rails stuff. docker optional but helpful. aws cli setup needed for s3/rds.
 
+## git notes
+
+main is protected — need to use PRs for all changes  
+linear history is required, so when merging:
+- ✅ use "squash & merge" or "rebase & merge"
+- ❌ don't use "merge commit" (will get blocked)
